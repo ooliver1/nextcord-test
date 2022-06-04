@@ -1,7 +1,7 @@
 from itertools import product
 
 
-low = "bolb "
+low = "test "
 up = low.upper()
 m = zip(low, up)
 
