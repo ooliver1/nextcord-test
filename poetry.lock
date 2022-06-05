@@ -341,7 +341,7 @@ python-versions = "*"
 
 [[package]]
 name = "ooliver-botbase"
-version = "1.16.2"
+version = "1.17.3"
 description = "A personal nextcord bot base package for bots."
 category = "main"
 optional = false
@@ -534,7 +534,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "0397938e824fa362cbd33910d3951f0da2d6073fd5d17811a71087173033fe1d"
+content-hash = "29ca566b8d7f7d0de33736cadbb8a7cf03f2c0eb92692792bec95b31943ffb6f"
 
 [metadata.files]
 aiodns = [
@@ -1024,8 +1024,8 @@ nodeenv = [
     {file = "nodeenv-1.6.0.tar.gz", hash = "sha256:3ef13ff90291ba2a4a7a4ff9a979b63ffdd00a464dbe04acf0ea6471517a4c2b"},
 ]
 ooliver-botbase = [
-    {file = "ooliver-botbase-1.16.2.tar.gz", hash = "sha256:758d8c9fedad791705a37a8b72784a503033ca5171ee8194492523cc3e0cd4d5"},
-    {file = "ooliver_botbase-1.16.2-py3-none-any.whl", hash = "sha256:c6824cc2d28b5a0242f96d14052d80f3c76be2533033db3e2878e803d74c1f73"},
+    {file = "ooliver-botbase-1.17.3.tar.gz", hash = "sha256:dbc28e12d0a71edbd86cf713c413dc89c37434c3cbeee1c861219d70fcc5faf3"},
+    {file = "ooliver_botbase-1.17.3-py3-none-any.whl", hash = "sha256:9e2d0611e440ad5eb5dc3add4d1863969634b55a966831c799b22061442eadd1"},
 ]
 orjson = [
     {file = "orjson-3.7.1-cp310-cp310-macosx_10_7_x86_64.whl", hash = "sha256:4175929ca77338e6a57ff232c0e80443411ac0b489bfff755988ae70e3f62a97"},
