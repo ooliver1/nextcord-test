@@ -22,7 +22,7 @@ async def check(ctx: Context):
 
 @check.command()
 async def random(ctx: Context):
-    await ctx.send("Run /check")
+    await ctx.send("Run /random_test")
 
 
 class Check(CogBase):

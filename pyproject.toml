@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.10"
 nextcord = {extras = ["speed"], version = "^2.0.0-beta.2"}
 uvloop = "^0.16.0"
-ooliver-botbase = "^1.16.2"
+ooliver-botbase = "^1.17.3"
 python-dotenv = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
