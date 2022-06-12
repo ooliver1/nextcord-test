@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING
 
 from botbase import CogBase
 from nextcord import ClientCog, Interaction, slash_command
-from nextcord.ext.application_checks import bot_has_role as app_bot_has_role
+from nextcord.ext.application_checks import bot_has_any_role as app_bot_has_any_role
 from nextcord.ext.commands import Context
 
 from ._ import core
@@ -14,27 +14,27 @@ if TYPE_CHECKING:
 
 
 @core.group()
-async def bot_has_role(ctx: Context):
+async def bot_has_any_role(ctx: Context):
     ...
 
 
-@bot_has_role.command()
+@bot_has_any_role.command()
 async def test(ctx: Context):
-    await ctx.send("Run /test_bot_has_role")
+    await ctx.send("Run /test_bot_has_any_role")
 
 
-class BotHasRole(CogBase):
-    @slash_command(description="Requires `test` role")
-    @app_bot_has_role("test")
-    async def test_bot_has_role(self, inter: Interaction):
+class BotHasAnyRole(CogBase):
+    @slash_command(description="Requires `test` or `test2` role")
+    @app_bot_has_any_role("test", "test2")
+    async def test_bot_has_any_role(self, inter: Interaction):
         await inter.send("You got lucky")
 
-    @test_bot_has_role.error
-    async def test_bot_has_role_err(
+    @test_bot_has_any_role.error
+    async def test_bot_has_any_role_err(
         self: ClientCog, inter: Interaction, exc: Exception
     ):
         await inter.send(f"Yay {exc}")
 
 
 def setup(bot: MyBot):
-    bot.add_cog(BotHasRole(bot))
+    bot.add_cog(BotHasAnyRole(bot))
